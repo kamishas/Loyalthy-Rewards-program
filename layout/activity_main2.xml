@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Customer Info -->
+    <TextView
+        android:id="@+id/tvCustomerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading customer info..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Customer Photo -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCustomerPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Customer Photo"
+        app:layout_constraintTop_toBottomOf="@id/tvCustomerInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- View Transactions Button -->
+    <Button
+        android:id="@+id/btnViewTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Transactions"
+        app:layout_constraintTop_toBottomOf="@id/ivCustomerPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Transaction Details Button -->
+    <Button
+        android:id="@+id/btnTransactionDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Details"
+        app:layout_constraintTop_toBottomOf="@id/btnViewTransactions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Redeem Details Button -->
+    <Button
+        android:id="@+id/btnRedeemDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redeem Details"
+        app:layout_constraintTop_toBottomOf="@id/btnTransactionDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Family Points Button -->
+    <Button
+        android:id="@+id/btnAddFamilyPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Family Points"
+        app:layout_constraintTop_toBottomOf="@id/btnRedeemDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Prize Details Button -->
+    <Button
+        android:id="@+id/btnPrizeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prize Details"
+        app:layout_constraintTop_toBottomOf="@id/btnAddFamilyPoints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
